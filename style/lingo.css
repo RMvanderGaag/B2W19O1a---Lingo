@@ -1,0 +1,70 @@
+body{
+	margin: 0;
+	font-family: sans-serif;
+}
+
+h1{
+	text-align: center;
+	font-family: 'Minecraft';
+	position: relative;
+	top: 30px;
+}
+
+
+#button_2{
+	background-color: #ffffff;
+	border: 1px solid black;
+	font-size: 15px;
+	margin: -20 auto;
+	border-radius: 50px;
+	width: 100px;
+	height: 25px;
+	position: relative;
+	top: 40px;
+}
+
+
+
+#lingoDiv{
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background: url(../img/stone2.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#gamecontainer{
+	margin-top: 50px;
+	width: 100%;
+	height: 85%;
+}
+
+.row{
+	margin: 0 auto;
+	height: 100px;
+	width: 35%;
+}
+
+.column{
+	width: 98px;
+	height: 98px;
+	background: url(../img/iron.png) no-repeat;
+	background-size: cover;
+	float: left;
+	margin-right: 2px;
+	border-radius: 5px;
+
+	font-size: 75px;
+	text-align: center;
+}
+
+p{
+	font-family: 'Minecraft';
+}
+
+
+
+
+
+
