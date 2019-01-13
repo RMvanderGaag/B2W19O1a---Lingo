@@ -3,14 +3,29 @@ var inRow = 1;
 var naam = words[Math.floor(Math.random() * words.length)];
 var guess = [];
 var correctLetters = [naam.charAt(0), " ", " ", " ", " "];
+var timeLeft = 30;
 
 
 document.getElementById("button_1").style.display = "none";
+document.getElementById("tijd").style.display = "none";
 
 button_2.onclick = function(){
 	document.getElementById("button_2").style.display = "none";
+	document.getElementById("tijd").style.display = "block";
 	create();
+	timer();
 	addCorrectLetter();
+}
+
+function timer(){
+	var countdownTimer = setInterval(function(){
+		timeLeft--;
+		document.getElementById("countdown").textContent = timeLeft;
+		if (timeLeft < 0){
+			alert("Je tijd is op! het woord was " + naam);
+			location.reload();
+		}
+	},1000);
 }
 
 function create(){
